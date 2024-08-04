@@ -5,10 +5,10 @@
     TRAINER: "SIVAKUMAR"
     DURATION: "120HRS"
   tasks:
-  - name: print overridden information
-    ansible.builtin.debug:
+  - name: print overridden 
     vars:
       COURSE: "DEVOPS"
+    ansible.builtin.debug:  
       msg: "Hi we are learning {{COURSE}} from {{TRAINER}}, Duration is {{DURATION}}"
   - name: print information
     ansible.builtin.debug:
