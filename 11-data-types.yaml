@@ -2,16 +2,16 @@
   hosts: localhost
   vars:
     COURSE: Devops with AWS #STRING
-  TOOLS: #LIST
+  Tools: #LIST
    -LINUX
    -SHELL
    -ANSIBLE
-  EXPERIENCE: #MAP/DIRECTORY
+  Experience: #MAP/DIRECTORY
     DEVOPS: 3 #NUMBER
     AWS: 2
     DOCKER: 1
-  REALPROJECT: true #boolean
+  Realproject: true #boolean
   tasks:
   - name: print variables
     ansible.builtin.debug:
-      msg: "course :{{COURSE}},Tools Covered :{{TOOLS}},Experience is:{{EXPERIENCE}},Real project is:{{REALPROJECT}}"
+      msg: "course :{{COURSE}},Tools Covered :{{Tools}},Experience is:{{Experience}},Real project is:{{Realproject}}"
