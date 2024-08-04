@@ -9,9 +9,9 @@
   EXPERIENCE: #MAP/DIRECTORY
     DEVOPS: 3 #NUMBER
     AWS: 2
-    DOCKER:1
-  REAL PROJECT: true #boolean
+    DOCKER: 1
+  REALPROJECT: true #boolean
   tasks:
   - name: print variables
     ansible.builtin.debug:
-      msg: "course :{{COURSE}},Tools Covered :{{TOOLS}},Experience is:{{EXPERIENCE}},Real project is:{{REAL PROJECT}}"
+      msg: "course :{{COURSE}},Tools Covered :{{TOOLS}},Experience is:{{EXPERIENCE}},Real project is:{{REALPROJECT}}"
