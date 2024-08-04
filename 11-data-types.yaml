@@ -2,15 +2,15 @@
   hosts: localhost
   vars:
     COURSE: Devops with AWS #STRING
-  Tools: #LIST
-   -LINUX
-   -SHELL
-   -ANSIBLE
-  Experience: #MAP/DIRECTORY
-    DEVOPS: 3 #NUMBER
-    AWS: 2
-    DOCKER: 1
-  Realproject: true #boolean
+    Tools: #LIST
+    - LINUX
+    - SHELL
+    - ANSIBLE
+    Experience: #MAP/DIRECTORY
+      DEVOPS: 3 #NUMBER
+      AWS: 2
+      DOCKER: 1
+    Realproject: true #boolean
   tasks:
   - name: print variables
     ansible.builtin.debug:
